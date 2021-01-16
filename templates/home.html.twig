@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body style="background-image: url('bg.jpg'); background-repeat: no-repeat; background-size: cover">
+    <div style="position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">
+        <div class="bg-text" style="text-align: center">
+            <h1 style="font-size:80px; color: #3be6c4; font-style: bold">Management de la relation Client (CRM)</h1>
+            </br></br>
+            <a class="btn btn-secondary" style="font-size: 30px; alignment: center" href="{{path('app_login')}}">Se Connecter</a>
+        </div>
+    </div>
+
+    </body>
+</html>
